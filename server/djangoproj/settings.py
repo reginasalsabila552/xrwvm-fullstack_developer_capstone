@@ -28,10 +28,11 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = [
     'https://reginasalsab-8000.theianext-0-labs-prod-misc-tools-us-east-0.proxy.cognitiveclass.ai',
     'https://*.proxy.cognitiveclass.ai',
+    'https://*.codeengine.appdomain.cloud',
 ]
 
 REST_FRAMEWORK = {
